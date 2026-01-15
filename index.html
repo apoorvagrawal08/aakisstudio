@@ -10,7 +10,9 @@
 
   <!-- Header -->
   <header class="header">
-    <h1>AAKIS STUDIO</h1>
+    <h1> 
+      <span class="brand-dark">AAKI'S</span>
+      <span class="brand-light">STUDIO</span></h1>
     <p>Minimal • Modern • Wall Art</p>
     
   </header>
@@ -30,25 +32,42 @@
   </section>
 
   <!-- Catalogue -->
-  <section id="catalogue" class="section dark">
-    <h2>Our Catalogue</h2>
+  <section id="catalogue" class="section dark home-catalogue">
+<section id="catalogue" class="section dark home-catalogue">
+
+    <h2>
+      <span class="Our Catalogue">"Our Catalogue</span></h2>
 
     <div class="catalogue">
-      <div class="card">
-        <img src="images/lion.jpg.jpg" alt="Wall Art Design">
-        <h3>Abstract Texture</h3>
-      </div>
-
+     <a href="abstract.html" class="card-link">
+  <div class="card">
+    <img src="images/lion.jpg.jpg">
+    <h3>Abstract Texture </h3>
+    <button class="btn-underline" onclick="toggleAbstract()">
+    See More 
+    </button>
+  </div>
+</a>
+<a href="minimal.html" class="card-link">
       <div class="card">
         <img src="images/schoolart2.jpg.jpeg" alt="Wall Art Design">
         <h3>Minimal Line Art</h3>
+       <button class="btn-underline" onclick="toggleAbstract()">
+    See More 
+    </button>
       </div>
+    </a>
 
+<a href="mural.html" class="card-link">
       <div class="card">
         <img src="images/gym!.jpg.jpg" alt="Wall Art Design">
-        <h3>Gym Wall</h3>
+        <h3> Mural Based Art </h3>
+        <button class="btn-underline" onclick="toggleAbstract()">
+    See More 
+    </button>
       </div>
     </div>
+  </a>
   </section>
 
   <!-- About -->

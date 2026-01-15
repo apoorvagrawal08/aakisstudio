@@ -20,11 +20,19 @@ body {
 .header h1 {
   font-size: 42px;
   letter-spacing: 4px;
+  font-weight: 800px;
+ 
 }
-
+.brand-dark{
+  color: #000;
+}
+.brand-light{
+  color: #333333;
+  font-weight:300;
+}
 .header p {
   margin-top: 10px;
-  color: #555;
+  color: #111;
 }
 
 /* Nav */
@@ -48,13 +56,13 @@ body {
 
 /* Sections */
 .section {
-  padding: 70px 20px;
+  padding: 30px 20px;
   text-align: center;
 }
 
 .section h2 {
   font-size: 32px;
-  margin-bottom: 20px;
+  margin: bottom 1000px;
 }
 
 .section p {
@@ -130,13 +138,183 @@ body {
 }
 /* Hover effect for catalogue images */
 .card {
+  background: white;
+  color: #111;
+  border: 1px solid #ddd;
   overflow: hidden;
 }
 
 .card img {
+   width: 100%;
+  height:auto;
+  object-fit:contain;
   transition: transform 0.4s ease;
 }
 
 .card:hover img {
   transform: scale(1.1);
 }
+.back-btn {
+  padding: 20px;
+}
+
+.back-btn a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  border: 1px solid white;
+  padding: 8px 14px;
+  border-radius: 4px;
+}
+
+.back-btn a:hover {
+  background: white;
+  color: black;
+}
+/* FIXED BACK BUTTON */
+.back-fixed {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: black;
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 6px;
+  z-index: 9999;
+}
+
+.back-fixed:hover {
+  background: #333;
+}
+.catalogue-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 images in one row */
+  gap: 25px;
+  width: 100%;
+  max-width: 4000px;
+  margin: auto;
+}
+
+
+.card-2 {
+   background: white;
+  color: #111;
+  border: solid #ddd;
+  overflow: hidden;
+  height:100%;
+}
+
+.card-2 img {
+   width: 100%;
+  height: 800px;;
+  object-fit:contain;
+  border-radius: 4px;
+  background:#111;
+
+  transition: transform 0.4s ease;
+}
+
+.card-2:hover img {
+  transform: scale(1.1);
+}
+.card-2 h3 {
+  padding: 15px;
+  font-weight: 500;
+}
+.section {
+  animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.see-more-btn{
+  padding: 8px 16px;
+  margin-top: 10px;
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.header-2 {
+  text-align: center;
+  padding: 40px 100px;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-2 h1 {
+  font-size: 42px;
+  letter-spacing: 4px;
+}
+
+.header-2 p {
+  padding-bottom: 10px;
+  text-align:center;
+  font-size: 32px;
+  color: black;
+  font-weight: 800px;
+  text-decoration:brown
+}
+.u-centre{
+  position:relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+.u-centre::after{
+  content: "";
+  position: absolute;
+  left:50%;
+  bottom: 0;
+  width:50%;
+  height: 2px;
+  background: #000;
+  transform: translate(-50%);
+}
+.btn-underline {
+  position:relative;
+  font-size: 14px;
+  color: #111;
+  text-decoration: none;
+  font-weight: 500;
+  padding-bottom: 6px;
+  display: inline-flex;
+  align-items:end;
+  gap: 6px;
+}
+
+.btn-underline span {
+  transition: transform 0.3s ease;
+}
+
+.btn-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.5px;
+  background: #333;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.btn-underline:hover::after {
+  transform: scaleX(1);
+}
+
+.btn-underline:hover span {
+  transform: translateX(4px);
+}
+
+
+  
