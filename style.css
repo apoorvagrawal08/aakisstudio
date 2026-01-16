@@ -315,7 +315,6 @@ body {
 }
 @media (max-width: 768px) {
   .catalogue {
-    display:grid;
     grid-template-columns: 1fr;
     gap:20px;
     padding:20px;
@@ -328,5 +327,6 @@ body {
 
 
   
+
 
 
