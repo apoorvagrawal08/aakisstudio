@@ -89,6 +89,8 @@ body {
 }
 
 .card {
+  height:500px;
+  min-height:unset;
   background: white;
   color: #111;
   border: 1px solid #ddd;
@@ -191,7 +193,9 @@ body {
 
 
 .card-2 {
-   background: white;
+  height:auto;
+  min-height:unset;
+  background: white;
   color: #111;
   border: solid #ddd;
   overflow: hidden;
@@ -309,7 +313,10 @@ body {
 }
 @media (max-width: 768px) {
   .catalogue {
+    display:grid;
     grid-template-columns: 1fr;
+    gap:20px;
+    padding:20px;
   }
 
   .card img {
@@ -319,3 +326,4 @@ body {
 
 
   
+
