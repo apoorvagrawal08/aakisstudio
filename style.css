@@ -313,20 +313,10 @@ body {
 .btn-underline:hover span {
   transform: translateX(4px);
 }
-@media (max-width: 768px) {
-  .catalogue {
-    grid-template-columns: 1fr;
-    gap:20px;
-    padding:20px;
-  }
-
-  .card img {
-    height: 220px;
-  }
-}
 
 
   
+
 
 
 
