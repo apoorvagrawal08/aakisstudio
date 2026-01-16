@@ -127,15 +127,7 @@ body {
   border-top: 1px solid #ddd;
   font-size: 14px;
 }
-@media (max-width: 768px) {
-  .catalogue {
-    grid-template-columns: 1fr;
-  }
 
-  .card img {
-    height: 220px;
-  }
-}
 /* Hover effect for catalogue images */
 .card {
   background: white;
@@ -314,6 +306,15 @@ body {
 
 .btn-underline:hover span {
   transform: translateX(4px);
+}
+@media (max-width: 768px) {
+  .catalogue {
+    grid-template-columns: 1fr;
+  }
+
+  .card img {
+    height: 220px;
+  }
 }
 
 
