@@ -90,7 +90,7 @@ body {
 
 .card {
   height:500px;
-  min-height:unset;
+  min-height:500px
   background: white;
   color: #111;
   border: 1px solid #ddd;
@@ -99,7 +99,6 @@ body {
 .card img {
   width: 100%;
   height:auto;
-  display: block;
   object-fit:contain;
 }
 
@@ -326,12 +325,7 @@ body {
     height: 220px;
   }
 }
-@media (max-width:768px) {
-  .card{
-    border-radius:12px;
-    padding:0;
-  }
-}
+
 
   
 
