@@ -315,11 +315,40 @@ body {
   .card img {
     height: 220px;
   }
+  .catalogue-2 {
+    
+     grid-template-columns: 1fr;
+  
+}
+}
+/* ===== ABSTRACT PAGE ONLY – MOBILE FIX ===== */
+
+@media (max-width: 768px) {
+
+  .abstract-page .catalogue-2 {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 0 12px;
+  }
+
+  .abstract-page .card-2 img {
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  .abstract-page .card-2 h3 {
+    font-size: 15px;
+    padding: 10px 8px;
+  }
+
 }
 
 
 
+
   
+
 
 
 
